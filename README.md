@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -34,11 +35,12 @@
          <blockqoute>
             "I will not throwing away my shot."<cite> Alexander Hamleton</cite>
          </blockqoute>
-      
+
       </article>
    </main>
 </body>
 <footer>
    © Malachi Leduc Copyright 2023
 </footer>
+
 </html>
