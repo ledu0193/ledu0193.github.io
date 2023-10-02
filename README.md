@@ -41,3 +41,4 @@
 <footer>
    © Malachi Leduc Copyright 2023
 </footer>
+</html>
