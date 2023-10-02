@@ -1,13 +1,9 @@
-<html lang="en">
-
-</html>
-
+<!DOCTYPE html>
+<html lang="en"> </html>
 <head>
    <meta charset="UTF-8">
-
    <title>Malachi Leduc</title>
 </head>
-
 <body>
    <header>
       <h1>Malachi Leduc</h1>
@@ -23,8 +19,6 @@
          <p>
             Before entering college Malachi was a streamer and content creator on <b>Twitch and Youtube</b> (note i will not be providing my social links).
             With this intrest he wanted to be an entertainer. All though out middle school and high school he loved seeing smiles on peoples faces.
-
-      
          </p>
       </article>
    </main>
