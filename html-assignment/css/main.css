@@ -3,28 +3,16 @@ body {
     font-size: 18px;
 }
 
-header, footer {
-    background-color: #29d919;
+header, footer, h1 {
+    background-color: #edf2fb;
 }
 
-.site-title {
-    color: red;
+h2{
+    background-color: #c1d3fe;
 }
-
-#my-image {
-    box-shadow: 0 0 2px 1px black;
+body {
+    background-color: #d7e3fc;
 }
-
-.hobby-list {
-    list-style-type: square;
+p{
+    background-color: #c1d3fe;
 }
-
-.hobby-list li:nth-child(odd) {
-    background-color: lightgray;
-}
-
-.small-image {
-    max-width: 200px; /* Set the maximum width for the image */
-    height: auto; /* Maintain the aspect ratio */
-}
-
