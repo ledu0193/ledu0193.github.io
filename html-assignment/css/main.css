@@ -24,7 +24,7 @@ p {
 /* Style the link as a button */
 .button {
     display: inline-block;
-    padding: 10px 5px;
+    padding: 10px 20px;
     background-color: #81b7f1;
     color: #fff;
     text-decoration: none;
