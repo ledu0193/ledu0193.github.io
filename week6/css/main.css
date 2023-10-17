@@ -1,14 +1,101 @@
-body {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-}
-p{
+
+/* 
+This is a CSS comment. 
+The short cut for adding the comment is commands/CTRL + / 
+ */
+
+ body{
+    font-family: Arial, Helvetica, sans-serif; 
+    color: darkslategray;
+    background-image: url(../images/white_brick_wall.png);
+ }
+ h1{
+    color: cadetblue;
+ }
+ p{
     background-color: antiquewhite;
-}
+ }
+
+ /* selecting multiple elements  */
+ h1, h2, h3, h4 {
+    text-decoration: underline; 
+ }
+
+ /* selecting child elements */
+ /* Remove bullets from the navigation but keep bullets on merch */
+ nav ul {
+    list-style: none;
+ }
+
+ /* Selecting child elements multiple levels */
+ nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+ }
+/* Selecting HTML elements with ID value */
+/* Best practice is to avoid uisng ID for styles. We do this for specificity. IDs overwrite classes so we don't want to use them. */
+ #treatoftheweek {
+    /* To fill the background image you need the colour, the image, the repeat, position-x, and position-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+    /* background-size  */
+    background-size: contain;
+
+ }
+ /*Selecting HTML elements with class name  */
+ .blue-link{
+    background-color: darkslategray;
+    color: antiquewhite;
+    text-decoration: none;
+ }
+ .large-text{
+    font-size: 24px;
+ }
+ .white-text{
+    color: antiquewhite;
+ }
+ /* combinators */
+ /* direct child selector - this will only select direct child of the parent */
 article>p{
     font-size: 24px;
+}
+/* CSS Typography properties */
+article p{
     font-weight: bold;
     line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
+/* Adjacent sibling selector - this will only select the element that is the very next sibling to the selected parent element, if any exist. */
+h3+ul{
+    border: 1px solid black
+}
+/* Sibling selector */
+h3~p{
+    text-transform: uppercase;
+}
+/* Attribute Selector */
+[href="treatoftheweek"] {
+    font-weight: bold;
+}
+/* money sign = 'ends with' example below = anything that ends with JPG */
+[src$=".jpg"]{
+    border:4px solid darkslategray
+}
+/* pseudo classes */
+/* styling the navigation menu */
+nav ul a, 
+nav ul a:link, 
+nav ul a:visited {
+    background-color: antiquewhite;
+/*Value Order: horizontal, vertical, blur, spread, and color */
+/* /- = left for horizontal, - = down for vertical */
+    box-shadow: -2px 2px 4px 2px #000; */
+}
+/* add class of current to HTML home link after adding hover and focus*/
+    nav ul.current
+    nav ul a:hover
+    nav ul a:focus{
+        text-decoration: underline;
+... (51 lines left)
 
