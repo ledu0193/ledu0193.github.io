@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reggies Coffee Shop - Home</title>
+
+<body>
+    <header>
+        <h1>Reggies Coffee Shop - Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <table border>
+            <Caption>Hours of Operation</Caption>
+            <thead>
+                <th>Day</th>
+                <th>Hours</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon-Fri</td>
+                    <td>6AM-9PM</td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>8AM-11PM</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Adding section for content form -->
+        <section>
+            <h3>We would love to hear from you!</h3>
+            <!-- Adding a form -->
+            <form action="thanks.html" method="post">
+                <div>
+                    <label for="">Your Name</label>
+                    <input type="text" id="fullname" placeholder="Jane/Joe Doe">
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" id="youremail" placeholder="Algonquin Email" value="@algonquinlive.com"
+                        required>
+                </div>
+                <div>
+                    <label for="">Message</label>
+                    <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="tickets">How many tickets? &#40;sold in pairs&#41; </label>
+                    <input type="number" name="tickets" id="tickets" min="2" max="10" step="2">
+                </div>
+                <div>
+                    <label for="">Row</label>
+                    <select name="row" id="row">
+                        <option value="front">Front Row</option>
+                        <option value="center" selected>Center Row</option>
+                        <option value="back">Back Row</option>
+                    </select>
+                </div>
+                <div>
+                <h3>Have you been here before?</h3>
+                <label for="yes">Yes</label>
+                <input type="radio" name="past" id="yes">
+
+                <label for="no">No</label>
+                <input type="radio" name="past" id="no">
+                </div>
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" name="policies" id="policies">
+                    <label for="policies">I agree to the terms and conditions</label>
+                </div>
+                <button type="button">Submit</button>
+            </form>
+        </section>
+    </main>
+    <Footer>
+        Copyright © Reggies Coffee Shop, 2023
+    </Footer>
+</body>
