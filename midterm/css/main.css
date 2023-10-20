@@ -1,24 +1,26 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    background-color: aqua;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Add a border to the left of the content container */
-.container {
-    border-left: 10px solid aqua; /* Adjust the thickness as needed */
-    padding-left: 20px; /* Add padding to separate content from the border */
+    background-color: #0074C2;
+    color: rgb(0, 0, 0);
 }
 
 header {
     text-align: center;
+    padding: 20px;
+    background-color: #003366;
+}
+
+.title-container {
     position: relative;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -28,52 +30,50 @@ header img {
     height: auto;
 }
 
-header h1 {
+h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 36px;
     color: white;
-    margin: 0;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 
 
 article img {
     float: left;
-    margin: 10px;
-    height: 150px;
-    width: 150px;
+    margin: 0 25px 25px 0;
+    height: auto;
+    width: 300px;
 }
 
-
+article p {
+    margin-bottom: 20px;
+}
 
 #facts ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-#facts li {
-    display: list-item;
-    /* Changed from "display: block" */
-    margin-bottom: 10px;
-}
-
-
-
-#facts li::before {
-    content: '•';
-    margin-right: 5px;
+form {
+    margin-top: 20px;
 }
 
 form label {
     display: block;
-    margin: 5px 0;
+    margin-bottom: 5px;
 }
 
-header, article, #facts, form {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+textarea {
+    width: 100%;
 }
