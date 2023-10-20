@@ -1,0 +1,37 @@
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+article img {
+    float: left;
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+
+#facts ul {
+    list-style: none;
+}
+
+#facts li::before {
+    content: '•';
+    margin-right: 5px;
+}
+
+form label {
+    display: block;
+    margin: 5px 0;
+}
