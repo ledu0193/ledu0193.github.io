@@ -10,6 +10,12 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Add a border to the left of the content container */
+.container {
+    border-left: 10px solid aqua; /* Adjust the thickness as needed */
+    padding-left: 20px; /* Add padding to separate content from the border */
+}
+
 header {
     text-align: center;
     position: relative;
@@ -65,8 +71,9 @@ form label {
     margin: 5px 0;
 }
 
-header,article,#facts,form {
+header, article, #facts, form {
     background-color: white;
     margin: 20px;
     padding: 20px;
-    border-radius:}
+    border-radius: 10px;
+}
