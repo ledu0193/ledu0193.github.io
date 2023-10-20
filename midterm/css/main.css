@@ -1,21 +1,25 @@
-body{
+body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
 }
 
-p{
+p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
+    text-align: center;
     position: relative;
-    text-align: center; 
 }
+
 
 
 header img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 header h1 {
@@ -24,7 +28,9 @@ header h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    margin: 0;
 }
+
 
 
 article img {
@@ -35,20 +41,19 @@ article img {
 }
 
 
+
 #facts ul {
     list-style: none;
     padding: 0;
 }
 
 #facts li {
-    display: block; 
-    margin-bottom: 10px; 
+    display: list-item;
+    /* Changed from "display: block" */
+    margin-bottom: 10px;
 }
 
 
-#facts ul {
-    list-style: none;
-}
 
 #facts li::before {
     content: '•';
@@ -59,22 +64,9 @@ form label {
     display: block;
     margin: 5px 0;
 }
-body {
-    background-color: aqua;
-    margin: 0;
-    padding: 0;
-}
 
-header, article, #facts, form {
+header,article,#facts,form {
     background-color: white;
     margin: 20px;
     padding: 20px;
-    border-radius: 10px;
-}
-
-#facts {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
+    border-radius:}
