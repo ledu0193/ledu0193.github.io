@@ -38,7 +38,8 @@ nav ul a {
 /* Styling for the section with the ID "treatoftheweek" */
 #treatoftheweek {
     background: cadetblue url(../images/bread.jpg) no-repeat center;
-    background-size: contain;
+    background-size: cover;
+    font-size: 1.25rem;
 }
 
 /* Styling for links with the class "blue-link" */
