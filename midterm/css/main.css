@@ -1,3 +1,4 @@
+/* Reset and General Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -7,6 +8,7 @@ body {
     color: rgb(0, 0, 0);
 }
 
+/* Header Styles */
 header {
     text-align: center;
     padding: 20px;
@@ -39,6 +41,7 @@ h1 {
     color: white;
 }
 
+/* Content Container Styles */
 .content-container {
     max-width: 800px;
     margin: 0 auto;
@@ -46,8 +49,6 @@ h1 {
     padding: 20px;
     border-radius: 10px;
 }
-
-
 
 article img {
     float: left;
@@ -60,11 +61,13 @@ article p {
     margin-bottom: 20px;
 }
 
+/* Facts Section Styles */
 #facts ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
+/* Form Styles */
 form {
     margin-top: 20px;
 }
@@ -78,32 +81,10 @@ textarea {
     width: 100%;
 }
 
+/* Navigation Styles */
 nav {
     background-color: #003366;
     padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 nav ul {
@@ -127,8 +108,6 @@ nav a {
     border-radius: 5px;
     background-color: #005599;
     transition: background-color 0.3s ease;
-
-
 }
 
 nav a:hover {
