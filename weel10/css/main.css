@@ -1,10 +1,10 @@
 /* ***********************
-        custom styles
+        Custom Styles
 ************************** */
 
 /* *********Global styles********* */
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', 'Helvetica', sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
@@ -16,7 +16,6 @@ body {
 *,
 *:after,
 *:before {
-    box-sizing: inherit;
     line-height: inherit;
 }
 
@@ -104,54 +103,115 @@ p {
     text-transform: uppercase;
 }
 
+/* *************NAVIGATION**************** */
+.nav-list {
+    border-bottom: 1px solid grey;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    flex: 1;
+    border: none;
+    border-right:1px solid grey ;
+}
+.nav-list li:last-child{
+    border: none;
+    
+}
+/* ************LOVE HATE********** */
+.nav-list a,
+.nav-list:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00add8;
+    color: inherit;
+}
+
 /* ******************** MOBILE APP SECTION *********************** */
-.btn{
+.btn {
     text-decoration: none;
     display: inline-block;
     padding: 20px;
     border: 1px solid grey;
     border-radius: 6px;
 }
+
 .btn:hover,
-.btn:focus{
+.btn:focus {
     background-color: #00add8;
     color: inherit;
 }
+
+/* **********Action Section************ */
+.actions-list {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 /* ******************footer****************** */
-.site-footer{
-    margin-top: 20px;
+.site-footer {
+    margin-top: 20px; 
     padding: 20px 0;
     border-top: 2px solid #00add8;
 }
-.copy{
+
+.copy {
     text-align: right;
 }
-/* DESKTOP STYLE */
 
-@media screen and (min-width:600px){
-    html{
+/* DESKTOP STYLE */
+@media screen and (min-width:600px) {
+    html {
         font-size: 16px;
     }
-    .mobile-logo{
+
+    .mobile-logo {
         display: none;
     }
-    .desktop-logo{
+
+    .desktop-logo {
         display: inline-block;
         max-width: 300px;
     }
-    .banner{
-        background-image:url(../images/smog-desktop.jpg) ;
+
+    .banner {
+        background-image: url(../images/smog-desktop.jpg);
     }
-    .banner h1{
-        color:white;
+
+    .banner h1 {
+        color: white;
     }
-/* *******app section******* */
-    .app img{
-        width: 40%;
-        float: left;
+
+    /* *******app section******* */
+    .app img {
+        width: 100%; /* Adjusted to make the image responsive */
         margin-right: 1em;
     }
-    .app .btn{
+
+    .app .btn {
         float: right;
     }
 }
+/* *************
+        MEDIA QYERY 800px
+        ************* */
+        @media screen and (min-width:800px){
+            .actions-list li {
+                max-width: 20%;
+            }
+        }
