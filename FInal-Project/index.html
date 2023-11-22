@@ -17,11 +17,11 @@
         </header>
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html" class="current">Home</a></li>
-                <li><a href="####" class="####">About Us</a></li>
-                <li><a href="####" class="####">Services</a></li>
-                <li><a href="####" class="####">Team</a></li>
-                <li><a href="####" class="####">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <!-- Search bar here -->
         </nav>
@@ -46,7 +46,7 @@
     <!-- About Us Section -->
     <div class="about-us-container">
         <article>
-            <section id="about us">
+            <section id="about-us">
                 <img src="images/about-us.jpg" alt="about-us-img">
                 <h2> About use</h2>
                 <p>
@@ -111,7 +111,7 @@
 
     <div class="team-container">
         <article>
-            <section id="services">
+            <section id="team">
                 <h2>Our Team</h2>
                 <img src="images/john.jpg" alt="john-doe">
                 <h3>John Doe</h3>
@@ -128,20 +128,46 @@
             </section>
         </article>
     </div>
-<div class="contact-us">
-    <h2>Contact Us</h2>
-        <form>
-            <h3>Send us a message</h3>
-            <label for="input1">Full Name:</label>
-            <input type="text" id="input1">
+    <div class="contact-us">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <h3>Send us a message</h3>
+                <label for="input1">Full Name:</label>
+                <input type="text" id="input1">
 
-            <label for="input2">Email</label>
-            <input type="text" id="input2">
+                <label for="input2">Email</label>
+                <input type="text" id="input2">
 
-            <label for="input3">Message:</label>
-            <textarea id="input3" rows="4" cols="50"></textarea>
-        </form>
-        
-        <h3>Hours of Operation</h3>
-</div>
+                <label for="input3">Message:</label>
+                <textarea id="input3" rows="4" cols="50"></textarea>
+            </form>
+            <div class="hours">
+                <h3>Hours of Opertation</h3>
+                <table border>
+                    <thead>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday-Friday</td>
+                            <td>9AM-6PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saterday-Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <h3>Location</h3>
+            <!-- google map image -->
+        </section>
+    </div>
+    <footer>
+        <p> ©Copyright Three Star Media, 2020</p>
+        <p>All images are taken from unsplash</p>
+    </footer>
 </body>
